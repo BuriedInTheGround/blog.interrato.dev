@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Interrato.dev</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/css.gg/icons/all.css">
+
+    <style>
+        /* Fonts. */
+        @font-face {
+            font-family: 'ZillaSlab';
+            src: local('ZillaSlab'), local('ZillaSlab-Regular'),
+                url('./fonts/ZillaSlab-Regular.woff2') format('woff2'),
+                url('./fonts/ZillaSlab-Regular.woff') format('woff');
+            font-style: normal;
+            font-weight: 400;
+        }
+
+        @font-face {
+            font-family: 'Montserrat';
+            src: local('Montserrat'), local('Montserrat-Regular'),
+                url('./fonts/Montserrat-Regular.woff2') format('woff2'),
+                url('./fonts/Montserrat-Regular.woff') format('woff');
+            font-style: normal;
+            font-weight: 400;
+        }
+
+        @font-face {
+            font-family: 'FiraCode';
+            src: local('FiraCode'),
+                url('./fonts/FiraCode-VariableFont_wght.ttf') format('truetype');
+            font-style: normal;
+            font-weight: 200;
+        }
+
+        /* Content styling. */
+        :root {
+            font-size: 145%;
+        }
+
+        @media only screen and (max-width: 1600px) {
+            :root {
+                font-size: 135%;
+            }
+        }
+
+        @media only screen and (max-width: 900px) {
+            :root {
+                font-size: 120%;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            :root {
+                font-size: 105%;
+            }
+            p {
+                font-size: 108%;
+            }
+        }
+
+        ::-moz-selection {
+            background: #D6EDFF;
+        }
+
+        ::selection {
+            background: #D6EDFF;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        h1, h2 {
+            font-family: 'ZillaSlab', serif;
+        }
+
+        p {
+            line-height: normal;
+        }
+
+        code {
+            font-family: 'FiraCode', monospace;
+            -moz-osx-font-smoothing: antialiased;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img.emoji {
+            height: 1em;
+            width: 1em;
+            margin: 0 .05em 0 .1em;
+            vertical-align: -0.1em;
+        }
+
+        .blogpost-title {
+            color: inherit;
+            outline: none;
+            text-decoration: none;
+            transition: color ease 0.3s;
+        }
+
+        .blogpost-title:focus,
+        .blogpost-title:hover,
+        .blogpost-title:active,
+        .blogpost-title.active {
+            color: #f8b700;
+            text-decoration: none;
+        }
+
+        .blogpost-title:visited {
+            color: inherit;
+        }
+    </style>
+
+    <script
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+        crossorigin="anonymous"></script>
+    <script
+        src="https://twemoji.maxcdn.com/v/13.0.1/twemoji.min.js"
+        integrity="sha384-5f4X0lBluNY/Ib4VhGx0Pf6iDCF99VGXJIyYy7dDLY5QlEd7Ap0hICSSZA1XYbc4"
+        crossorigin="anonymous">
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            document.body = twemoji.parse(document.body);
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="hero bg-dark">
+        <div class="hero-body">
+            <h1 class="text-uppercase flex-centered">interrato.dev</h1>
+            <p class="flex-centered">
+                Hi! I'm Simone Ragusa. I'm 21 and I live in Italy.
+            </p>
+        </div>
+    </div>
+
+    <div class="container grid-lg my-2 p-2">
+        <!-- <div class="columns">
+            <div class="column col-12 m-2">
+                <h2 class="text-uppercase mb-0">
+                    <a class="blogpost-title" href="">My first blog post</a>
+                </h2>
+                <p class="text-tiny text-gray">
+                    Simone Ragusa, dd MMM YYYY
+                </p>
+                <p class="text-muted mb-2">
+                    Hi there! This is my first blog post!
+                </p>
+            </div>
+        </div>
+        <div class="divider"></div> -->
+
+        <div class="columns">
+            <div class="column col-12 m-2 p-2">
+                <h4 class="text-uppercase flex-centered pt-2">
+                    Pretty empty here, uh...&nbsp; 📭
+                </h4>
+            </div>
+        </div>
+        <div class="divider"></div>
+
+        <br>
+        <ul class="pagination">
+            <!-- <li class="page-item page-prev">
+                <a href="#">
+                    <div class="page-item-title text-large text-dark text-capitalize">
+                        Newer Posts
+                        <span class="float-left">
+                            <i class="gg-chevron-left"></i>
+                        </span>
+                    </div>
+                </a>
+            </li> -->
+            <!-- <li class="page-item page-next">
+                <a href="#">
+                    <div class="page-item-title text-large text-dark text-capitalize">
+                        Older Posts
+                        <span class="float-right">
+                            <i class="gg-chevron-right"></i>
+                        </span>
+                    </div>
+                </a>
+            </li> -->
+        </ul>
+    </div>
+
+    <script data-goatcounter="https://blog-interrato.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+
+</html>
