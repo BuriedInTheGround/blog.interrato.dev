@@ -1,1 +1,6 @@
-spectre.css
+.DS_Store
+node_modules
+/.svelte-kit
+/package
+build
+functions
