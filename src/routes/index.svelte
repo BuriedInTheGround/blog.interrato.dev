@@ -32,6 +32,31 @@
 
 <svelte:head>
 	<title>interrato · blog</title>
+	<meta name="title" content="interrato · blog" />
+	<meta
+		name="description"
+		content="I'm a software developer and undergraduate student of computer engineering!"
+	/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://blog.interrato.dev" />
+	<meta property="og:title" content="interrato · blog" />
+	<meta
+		property="og:description"
+		content="I'm a software developer and undergraduate student of computer engineering!"
+	/>
+	<meta property="og:image" content="/header.png" />
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content="https://blog.interrato.dev" />
+	<meta property="twitter:title" content="interrato · blog" />
+	<meta
+		property="twitter:description"
+		content="I'm a software developer and undergraduate student of computer engineering!"
+	/>
+	<meta property="twitter:image" content="/header.png" />
 </svelte:head>
 
 <section>

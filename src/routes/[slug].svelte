@@ -37,6 +37,22 @@
 
 <svelte:head>
 	<title>{post.title} — interrato · blog</title>
+	<meta name="title" content="{post.title} — interrato · blog" />
+	<meta name="description" content={post.description} />
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://blog.interrato.dev/{post.slug}" />
+	<meta property="og:title" content="{post.title} — interrato · blog" />
+	<meta property="og:description" content={post.description} />
+	<meta property="og:image" content="/header.png" />
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content="https://blog.interrato.dev/{post.slug}" />
+	<meta property="twitter:title" content="{post.title} — interrato · blog" />
+	<meta property="twitter:description" content={post.description} />
+	<meta property="twitter:image" content="/header.png" />
 </svelte:head>
 
 <section>
