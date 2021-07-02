@@ -2,8 +2,8 @@ const posts = [
     {
         title: 'Cryptography Journey: Part 1',
         slug: 'crypto-journey-part-1',
-        published: false,
-        publishedOn: (new Date(1970, 0, 1, 0)).toJSON()
+        published: true,
+        publishedOn: (new Date(2021, 6, 2, 21)).toJSON()
     }
 ];
 

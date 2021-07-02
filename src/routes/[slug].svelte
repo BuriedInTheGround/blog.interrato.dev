@@ -43,13 +43,13 @@
 	<a class="block md:text-left text-center text-gray-700" href="/">Home</a>
 	<h1 class="font-serif text-gray-800 text-4xl text-center my-4">{post.title}</h1>
 
-	<h2 class="text-gray-700 text-lg text-center">
+	<time datetime={post.publishedOn} class="block text-gray-700 text-lg text-center">
 		{new Date(post.publishedOn).toUTCString().slice(0, 11)}
-	</h2>
+	</time>
 </section>
 
 <section class="mt-4 py-4 flex justify-center">
-	<div class="text-lg max-w-prose">
+	<div class="text-lg antialiased max-w-prose">
 		<svelte:component this={PostContent} />
 	</div>
 </section>
