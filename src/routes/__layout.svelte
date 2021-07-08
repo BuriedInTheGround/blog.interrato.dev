@@ -5,6 +5,15 @@
 	import GoMarkGithub from 'svelte-icons/go/GoMarkGithub.svelte';
 </script>
 
+<svelte:head>
+	<script
+		data-goatcounter="https://blog-interrato.goatcounter.com/count"
+		async
+		src="https://gc.zgo.at/count.v2.js"
+		crossorigin="anonymous"
+		integrity="sha384-PeYXrhTyEaBBz91ANMgpSbfN1kjioQNPHNDbMvevUVLJoWrVEjDCpKb71TehNAlj"></script>
+</svelte:head>
+
 <main class="p-4 max-w-6xl mx-auto">
 	<slot />
 </main>
